@@ -1,0 +1,2 @@
+# bachelorarbeit
+Repository zur Bachelorarbeit
