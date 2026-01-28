@@ -17,19 +17,19 @@ Als Ergebnis entsteht neben der schriftlichen Ausarbeitung eine prototypische We
 ## 📋 Vorgehen
 Das Projekt gliedert sich in mehrere aufeinander aufbauende Phasen:
 
-**1. Projektdefinition und Vorbereitung**
+**1. Projektdefinition und Vorbereitung** <br>
 Klärung des Themenrahmens, der Zielsetzung, der relevanten Nutzergruppen sowie der theoretischen Grundlagen zu Mikrointeraktionen und digitaler Barrierefreiheit.
 
-**2. Analyse von Mikrointeraktionen und ihren Barrieren**
+**2. Analyse von Mikrointeraktionen und ihren Barrieren** <br>
 Untersuchung bestehender Webinterfaces, Identifikation typischer Mikrointeraktionen und Analyse wiederkehrender Barrieren anhand von Beobachtungen, Nutzergruppen und relevanten Standards.
 
-**3. Ableitung von Gestaltungsprinzipien und Konzeption**
+**3. Ableitung von Gestaltungsprinzipien und Konzeption** <br>
 Verdichtung der Analyseergebnisse zu zentralen Problemclustern und Formulierung barrierefreier Gestaltungsprinzipien. Konzeption der prototypischen Website und der dargestellten Beispiele.
 
-**4. Umsetzung und Implementierung**
+**4. Umsetzung und Implementierung** <br>
 Gestaltung und Umsetzung der prototypischen Website, inklusive Vorher-/Nachher-Darstellungen und erläuternder Inhalte zu den Gestaltungsprinzipien.
 
-**5. Evaluation, Reflexion und Abschluss**
+**5. Evaluation, Reflexion und Abschluss** <br>
 Reflexion der Ergebnisse, Einordnung der Gestaltungsprinzipien, Diskussion von Grenzen und Potenzialen sowie Abschluss der schriftlichen Arbeit und Dokumentation.
 
 ## 📚 Weiterführende Dokumentation 
