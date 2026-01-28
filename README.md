@@ -1,4 +1,4 @@
-# Barrierefreie Mikrointeraktionen – Bachelorarbeit
+# Barrierefreie Gestaltung von Mikrointeraktionen im Web: Identifikation typischer Barrieren und Lösungsansätze
 
 Dieses Wiki begleitet das Projekt im Rahmen meiner Bachelorarbeit zur barrierefreien Gestaltung von Mikrointeraktionen im Web. 
 
