@@ -1,0 +1,38 @@
+:root {
+  --color-blue-dark: rgb(0, 90, 178);
+  --color-blue-light: rgba(0, 90, 178, 0.8);
+  --color-lightest: rgb(253, 253, 253);
+  --color-darkest: rgb(47, 52, 57);
+
+  --ff-primary: "Inter", sans-serif;
+
+  --lh-tight: 100%;
+  --lh-normal: 130%;
+  --lh-loose: 150%;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  --fs-xs: 16px;
+  --fs-s: 20px;
+  --fs-m: 24px;
+  --fs-l: 36px;
+  --fs-xl: 48px;
+  --fs-xxl: 96px;
+
+  --xxs: 8px;
+  --xs: 14px;
+  --s: 26px;
+  --m: 32px;
+  --l: 50px;
+  --xl: 75px;
+  --xxl: 126px;
+  --xxxl: 225px;
+
+  --eighth: calc(var(--m) / 8);
+  --quarter: calc(var(--m) / 4);
+  --half: calc(var(--m) / 2);
+}

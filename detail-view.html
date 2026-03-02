@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <title>Gestaltungsprinzip</title>
+    <link rel="stylesheet" href="/src/styles/combined.css" />
+    <link rel="stylesheet" href="/src/styles/detail-ansicht.css" />
   </head>
   <body>
     <header>
       <nav>
-        <img src="img/logo.png" alt="Logo" />
+        <img src="img/logo.png" alt="Logo" class="logo"/>
 
-        <div>
+        <div class="nav-links">
           <a href="gestaltungsprinzipien.html">Gestaltungsprinzipien</a>
           <a href="nutzergruppen.html">Nutzergruppen</a>
           <a href="ueber-uns.html">Beispiel</a>
@@ -17,10 +19,10 @@
         </div>
       </nav>
     </header>
-    <section>
+    <section class="title-section blue-background">
       <h3>Das Problem der monomodalen Feedback-Kanäle</h3>
-      <h1>Überschrift / Gestaltungsprinzip</h1>
-      <svg></svg>
+      <h1>Redundante Rückmeldung statt einzelner visueller Signale</h1>
+      <!-- <svg></svg> -->
       <p>
         <p>
         Mikrointeraktionen sollten Rückmeldungen nicht ausschließlich über einen
@@ -39,8 +41,7 @@
       </p>
       </p>
     </section>
-  
-    <section>
+    <section class="text-section line">
       <button>Positives Beispiel</button>
       <button>Negatives Beispiel</button>
       <h2>DER EFFEKT</h2>
@@ -51,9 +52,10 @@
           Fehlermeldung für alle Benutzer klar verständlich zu machen.
         </p>
     </section>
-    <section>
+    <section class="text-section blue-background">
       <h2>DIE NUTZER</h2>
       <h3>Betroffene Gruppen</h3>
+      <div>
       <h4>Nutzergruppe 1</h4>
       <p>
         In einem Formular könnte ein Fehler durch eine rote Umrandung des
@@ -61,6 +63,8 @@
         eine Textmeldung wie "Ungültige Eingabe" bereitgestellt werden, um die
         Fehlermeldung für alle Benutzer klar verständlich zu machen.
       </p>
+      </div>
+      <div>
       <h4>Nutzergruppe 2</h4>
       <p>
         In einem Formular könnte ein Fehler durch eine rote Umrandung des
@@ -68,8 +72,9 @@
         eine Textmeldung wie "Ungültige Eingabe" bereitgestellt werden, um die
         Fehlermeldung für alle Benutzer klar verständlich zu machen.
       </p>
+      </div>
     </section>
-    <section>
+    <section class="text-section">
       <h2>DIE AUSGABE</h2>
       <h3>Die Endgeräte</h3>
       <p>
@@ -80,9 +85,10 @@
         congue enim, ut porta lorem lacinia consectetur.
       </p>
     </section>
-    <section>
+    <section class="text-section blue-background">
         <h2>DIE UMSETZUNG</h2>
         <h3>Design Systeme</h3>
+        <div>
         <h4>Material Design</h4>
         <p>
           Material Design legt großen Wert auf die Bereitstellung von Feedback
@@ -91,6 +97,8 @@
           Fehlersymbole und Textmeldungen angezeigt, um sicherzustellen, dass
           alle Nutzer*innen die Rückmeldung verstehen können.
         </p>
+        </div>
+        <div>
         <h4>Carbon Design System</h4>
         <p>
           Das Carbon Design System von IBM betont die Bedeutung von redundanten
@@ -99,6 +107,8 @@
           alle Benutzer*innen zugänglich und verständlich ist, unabhängig von
           individuellen Wahrnehmungsfähigkeiten.
         </p> 
+        </div>
+        <div>
         <h4>Apple Human Interface Guidelines</h4>
         <p>
           Apple betont in seinen Human Interface Guidelines die Bedeutung von
@@ -106,6 +116,7 @@
           klare visuelle Hinweise, die für alle Benutzer*innen verständlich sind,
           insbesondere bei Fehlern oder Statusänderungen.
         </p>
+        </div>
     </section>
     <footer>
         <a href="#">© 2026 Mia Henrichsmeyer</a>
