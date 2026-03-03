@@ -31,34 +31,54 @@ html {
       text-decoration: underline;
     }
   }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 h1 {
-    font-size: var(--fs-xl);
-    font-weight: var(--fw-bold);
-    padding-top: var(--xs);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  padding-top: var(--xs);
 }
 
 h2 {
-    font-size: var(--m);
-    font-weight: var(--fw-semi-bold);
+  font-size: var(--m);
+  font-weight: var(--fw-semi-bold);
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: var(--l);
-    padding: var(--m);
-    margin: var(--s) 0;
-    
-    a{
-        text-decoration: none;
-        color: var(--color-blue-dark);
-    }
+  display: flex;
+  justify-content: center;
+  gap: var(--l);
+  padding: var(--m);
+  margin: var(--s) 0;
+
+  a {
+    text-decoration: none;
+    color: var(--color-blue-dark);
+  }
 }
 
 p {
-    font-size: var(--fs-xs);
-    line-height: var(--lh-normal);
-    padding-top: var(--xs);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+  padding-top: var(--xs);
+  text-align: justify;
+  text-justify: inter-word; /* Optimiert Abstände zwischen Wörtern */
+  hyphens: auto; /* Automatische Silbentrennung */
+  -webkit-hyphens: auto; /* Für Safari */
+  -ms-hyphens: auto; /* Für ältere IE/Edge */
+}
+
+.hidden {
+  display: none;
+
+  @media (max-width: 799px) {
+    display: flex; 
+    align-items: center;
+    justify-content: right;
+    margin: var(--m);
+  }
 }

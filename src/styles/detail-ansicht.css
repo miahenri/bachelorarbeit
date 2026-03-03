@@ -13,3 +13,45 @@ section {
     padding-bottom: var(--l);
 }
     
+.line {
+    h2, h3 {
+        color: var(--color-blue-dark);
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        gap: var(--m);
+    }
+
+    h2::after {
+        content: '';
+        flex: 1;
+        height: 4px;
+        margin-right: calc(var(--xl) * -1);
+        background-color: var(--color-blue-dark);
+    }
+}
+
+.text-columns {
+    display: flex;
+    flex-direction: row;
+    gap: var(--l);
+
+    div {
+        h4 {
+            font-size: var(--fs-m);
+            margin-top: var(--m);
+        }
+
+        p {
+            font-size: var(--fs-xs);
+            padding-top: var(--xxs);
+        }
+    }
+
+    @media (max-width: 949px) {
+        flex-direction: column;
+        gap: var(--xs);
+    }
+}
