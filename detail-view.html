@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav>
-        <img src="img/logo.png" alt="Logo" class="logo"/>
+        <img src="img/logo.png" alt="Logo" class="logo" />
 
         <div class="nav-links">
           <a href="gestaltungsprinzipien.html">Gestaltungsprinzipien</a>
@@ -21,113 +21,63 @@
       </nav>
     </header>
     <section class="title-section blue-background">
-      <h3>Das Problem der monomodalen Feedback-Kanäle</h3>
-      <h1>Redundante Rückmeldung statt einzelner visueller Signale</h1>
+      <h3 id="problem-kicker"></h3>
+      <h1 id="principle-title"></h1>
       <!-- <svg></svg> -->
-      <p>
-        <p>
-        Mikrointeraktionen sollten Rückmeldungen nicht ausschließlich über einen
-        einzelnen visuellen Kanal wie Farbe oder Kontrast vermitteln. Wird
-        Feedback nur über subtile Farbänderungen oder Kontrastunterschiede
-        kommuniziert, setzt dies eine uneingeschränkte visuelle Wahrnehmung
-        voraus und schließt Nutzer*innen mit Sehbeeinträchtigungen,
-        Farbenblindheit oder eingeschränkter Kontrastwahrnehmung teilweise oder
-        vollständig aus. Stattdessen sollten Rückmeldungen redundant gestaltet
-        werden, indem mehrere gleichwertige visuelle Hinweise kombiniert werden.
-        Dazu zählen beispielsweise die Ergänzung von Farbänderungen durch
-        Formveränderungen, Icons, Unterstreichungen, klare Fokusindikatoren oder
-        textuelle Hinweise. Auf diese Weise bleibt die Rückmeldung auch dann
-        verständlich, wenn ein einzelner Wahrnehmungskanal nicht zuverlässig
-        genutzt werden kann.
-      </p>
-      </p>
+      <p id="principle-intro"></p>
     </section>
     <section class="text-section line">
-      <button>Positives Beispiel</button>
-      <button>Negatives Beispiel</button>
+      <!-- Interaktive Beispiele -->
+      <div class="example-wrap">
+        <div id="example-good" class="example-panel"></div>
+        <div id="example-bad" class="example-panel hidden"></div>
+      </div>
       <h2>DER EFFEKT</h2>
-        <p>
-          In einem Formular könnte ein Fehler durch eine rote Umrandung des
-          Eingabefelds angezeigt werden. Zusätzlich könnte ein Fehlersymbol und
-          eine Textmeldung wie "Ungültige Eingabe" bereitgestellt werden, um die
-          Fehlermeldung für alle Benutzer klar verständlich zu machen.
-        </p>
+      <p id="effect-text"></p>
     </section>
     <section class="text-section blue-background">
       <h2>DIE NUTZER</h2>
       <h3>Betroffene Gruppen</h3>
-      <div class="text-columns">
-      <div>
-      <h4>Nutzergruppe 1</h4>
-      <p>
-        In einem Formular könnte ein Fehler durch eine rote Umrandung des
-        Eingabefelds angezeigt werden. Zusätzlich könnte ein Fehlersymbol und
-        eine Textmeldung wie "Ungültige Eingabe" bereitgestellt werden, um die
-        Fehlermeldung für alle Benutzer klar verständlich zu machen.
-      </p>
-      </div>
-      <div>
-      <h4>Nutzergruppe 2</h4>
-      <p>
-        In einem Formular könnte ein Fehler durch eine rote Umrandung des
-        Eingabefelds angezeigt werden. Zusätzlich könnte ein Fehlersymbol und
-        eine Textmeldung wie "Ungültige Eingabe" bereitgestellt werden, um die
-        Fehlermeldung für alle Benutzer klar verständlich zu machen.
-      </p>
-      </div>
+      <div class="text-columns" id="user-groups">
+        <!-- <div>
+          <h4>Nutzergruppe 1</h4>
+          <p></p>
+        </div>
+        <div>
+          <h4>Nutzergruppe 2</h4>
+          <p></p>
+        </div> -->
       </div>
     </section>
     <section class="text-section line">
       <h2>DIE AUSGABE</h2>
       <h3>Die Endgeräte</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam
-        lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam
-        viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent
-        et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
-        congue enim, ut porta lorem lacinia consectetur.
-      </p>
+      <p id="devices-text"></p>
     </section>
     <section class="text-section blue-background">
-        <h2>DIE UMSETZUNG</h2>
-        <h3>Design Systeme</h3>
-        <div class="text-columns">
+      <h2>DIE UMSETZUNG</h2>
+      <h3>Design Systeme</h3>
+      <div class="text-columns">
         <div>
-        <h4>Material Design</h4>
-        <p>
-          Material Design legt großen Wert auf die Bereitstellung von Feedback
-          durch verschiedene visuelle Mittel. Zum Beispiel werden Fehler in
-          Formularen nicht nur durch rote Umrandungen, sondern auch durch
-          Fehlersymbole und Textmeldungen angezeigt, um sicherzustellen, dass
-          alle Nutzer*innen die Rückmeldung verstehen können.
-        </p>
+          <h4>Material Design</h4>
+          <p id="ds-material-text"></p>
         </div>
         <div>
-        <h4>Carbon Design System</h4>
-        <p>
-          Das Carbon Design System von IBM betont die Bedeutung von redundanten
-          Rückmeldungen, indem es klare visuelle Indikatoren wie Farbänderungen,
-          Icons und Textmeldungen kombiniert, um sicherzustellen, dass Feedback für
-          alle Benutzer*innen zugänglich und verständlich ist, unabhängig von
-          individuellen Wahrnehmungsfähigkeiten.
-        </p> 
+          <h4>Carbon Design System</h4>
+          <p id="ds-carbon-text"></p>
         </div>
         <div>
-        <h4>Apple Human Interface Guidelines</h4>
-        <p>
-          Apple betont in seinen Human Interface Guidelines die Bedeutung von
-          Feedback und der Zugänglichkeit von visuellen Indikatoren. Sie empfehlen
-          klare visuelle Hinweise, die für alle Benutzer*innen verständlich sind,
-          insbesondere bei Fehlern oder Statusänderungen.
-        </p>
+          <h4>Apple Human Interface Guidelines</h4>
+          <p id="ds-apple-text"></p>
         </div>
-        </div>
+      </div>
     </section>
     <footer>
-        <a href="#">© 2026 Mia Henrichsmeyer</a>
-        <a href="#">Über uns</a>
-        <a href="#">Github Repository</a>
-        <a href="#">Einstellungen</a>
+      <a href="#">© 2026 Mia Henrichsmeyer</a>
+      <a href="#">Über uns</a>
+      <a href="#">Github Repository</a>
+      <a href="#">Einstellungen</a>
     </footer>
+    <script src="./src/js/detail-page.js" defer></script>
   </body>
 </html>

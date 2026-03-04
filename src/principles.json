@@ -1,0 +1,146 @@
+{
+  "principles": [
+    {
+      "id": "redundant-feedback",
+      "problemKicker": "Das Problem des monomodalen Feedback-Kanals",
+      "principleTitle": "Redundante Rückmeldung statt einzelner visueller Signale",
+      "principleIntro": "Mikrointeraktionen sollten Rückmeldungen nicht ausschließlich über einen einzelnen visuellen Kanal wie Farbe oder Kontrast vermitteln. Wird Feedback nur über subtile Farbänderungen oder Kontrastunterschiede kommuniziert, setzt dies eine uneingeschränkte visuelle Wahrnehmung voraus und schließt Nutzer*innen mit Sehbeeinträchtigungen, Farbenblindheit oder eingeschränkter Kontrastwahrnehmung teilweise oder vollständig aus. Stattdessen sollten Rückmeldungen redundant gestaltet werden, indem mehrere gleichwertige visuelle Hinweise kombiniert werden. Dazu zählen beispielsweise die Ergänzung von Farbänderungen durch Formveränderungen, Icons, Unterstreichungen, klare Fokusindikatoren oder textuelle Hinweise. Auf diese Weise bleibt die Rückmeldung auch dann verständlich, wenn ein einzelner Wahrnehmungskanal nicht zuverlässig genutzt werden kann.",
+      "exampleGood": "TBD",
+      "exampleBad": "TBD",
+      "effectText": "TBD",
+      "userGroups": [
+        {
+          "title": "Menschen mit visuellen Einschränkungen",
+          "text": "Für Menschen mit visuellen Einschränkungen können subtile Farb- oder Kontraständerungen schwer oder gar nicht wahrnehmbar sein. Wenn Rückmeldungen ausschließlich über solche visuellen Signale erfolgen, besteht die Gefahr, dass Interaktionszustände nicht erkannt oder missverstanden werden."
+        },
+        {
+          "title": "Menschen mit kognitiven Einschränkungen",
+          "text": "Auch kognitiv eingeschränkte Menschen können subtile visuelle Veränderungen, wie leichte Farb- oder Kontraständerungen, häufig nicht zuverlässig wahrnehmen. Da solche Rückmeldungen eine erhöhte Aufmerksamkeit und Interpretation erfordern, werden sie leichter übersehen oder nicht eindeutig als Interaktionsfeedback erkannt."
+        }
+      ],
+      "devicesText": "Das Problem tritt besonders häufig bei einer Desktop-Nutzung auf. Zwar ähnelt sich die Darstellung von Desktop, Smartphone und Tablet häufig, jedoch sind viele subtile Rückmeldungen an Hover-Zustände gekoppelt, die bei Touch-Steuerung entfallen. Bei der Nutzung assistiver Technologien entfällt dieses Problem meist, da Screenreader beispielsweise visuelle Informationen wie Farb- oder Kontraständerungen nicht interpretieren. Bei reiner Tastatursteuerung besteht dieses Problem in der Regel weniger, da nahezu immer eine Fokusumrandung angezeigt wird.",
+      "designSystems": {
+        "material": "MaterialDesign kommuniziert Zustände teilweise über feine Farb- und Kontraständerungen, die für visuell eingeschränkte Nutzer eventuell nicht wahrnehmbar sind.",
+        "carbon": "Im Carbon Design System werden Farbänderungen durch Unterstreichungen und Fokusrahmen ergänzt.",
+        "apple": "Die HIG empfehlen, mehrere Wege zur Kommunikation von Feedback zu nutzen, machen jedoch keine verbindlichen Vorgaben zur konkreten Ausgestaltung."
+      }
+    },
+    {
+      "id": "hover-focus-equivalence",
+      "problemKicker": "Das Problem der ungleichwertigen Hover- und Fokuszustände",
+      "principleTitle": "Gleichwertige Interaktionszustände unabhängig von Eingabemethoden",
+      "principleIntro": "Mikrointeraktionen sollten Hover- und Fokuszustände visuell und funktional gleichwertig gestalten. Wenn Rückmeldungen, Zusatzinformationen oder Zustandsänderungen ausschließlich an Hover-Zustände geknüpft sind, werden sie nur für Mausnutzende zugänglich. Tastatur- und assistive Nutzungskontexte erhalten dadurch eine eingeschränkte oder unvollständige Interaktionserfahrung. Stattdessen sollten alle interaktiven Zustände so konzipiert sein, dass sie unabhängig von der Eingabemethode verständlich und nutzbar sind. Rückmeldungen, die beim Hover erscheinen, müssen ebenso beim Tastaturfokus verfügbar sein und vergleichbare Informationen vermitteln. Dadurch wird sichergestellt, dass Mikrointeraktionen nicht implizit eine bestimmte Eingabeform voraussetzen, sondern konsistent und inklusiv funktionieren.",
+      "exampleGood": "TBD",
+      "exampleBad": "TBD",
+      "effectText": "TBD",
+      "userGroups": [
+        {
+          "title": "Menschen mit motorischen Einschränkungen",
+          "text": "Besonders problematisch ist dies für motorische eingeschränkte Menschen, die stark auf Tastatursteuerung angewiesen sind. Wenn Interaktionszustände nur über Hover zugänglich sind und bei Tastatursteuerung nicht gleichwertig dargestellt werden, können wichtige Funktionen oder Informationen für diese Nutzergruppe schwer erreichbar oder vollständig unzugänglich sein."
+        }
+      ],
+      "devicesText": "Da der Hover-Zustand bei Touch Steuerung entfällt, zeigt sich dieses Problem besonders bei einer Desktop Nutzung, hauptsächlich jedoch bei Tastatursteuerung. Auch Screenreader und andere assistive Technologien nutzen zwar Tastatursteuerung, haben aber ebenfalls keinen Hover-Zustand, was beispielsweise die Tooltips auch für sie nicht zugänglich macht.",
+      "designSystems": {
+        "material": "Material Design beschreibt die unterschiedlichen Zustände ähnlich, fordert jedoch keine funktionale Gleichwertigkeit.",
+        "carbon": "Carbon dokumentiert Fokuszustände explizit und hebt diese visuell hervor.",
+        "apple": "Die HIG beschreiben die einzelnen Zustände nicht, eine Gleichwertigkeit bleibt somit implizit."
+      }
+    },
+    {
+      "id": "motion-not-primary",
+      "problemKicker": "Das Problem von Bewegung als Teil oder alleinige Rückmeldung",
+      "principleTitle": "Bewegung als unterstützendes nicht zentrales Feedback",
+      "principleIntro": "Mikrointeraktionen sollten Bewegung nicht als alleinigen oder zentralen Informationsträger einsetzen. Wird Feedback primär oder ausschließlich über Animationen, Übergänge oder Bewegungen vermittelt, setzt dies voraus, dass Nutzer*innen diese Bewegung wahrnehmen, verarbeiten und tolerieren können. Für bewegungssensible Personen oder Nutzungskontexte mit reduzierter Bewegung führt dies dazu, dass Rückmeldungen abgeschwächt oder vollständig unverständlich werden. Stattdessen sollte Bewegung nur eine unterstützende Rolle einnehmen und stets durch gleichwertige statische Rückmeldungen ergänzt werden. Zustandsänderungen müssen auch ohne Bewegung eindeutig erkennbar bleiben, etwa durch klare visuelle Markierungen, textuelle Hinweise oder strukturelle Veränderungen. Zusätzlich sollte die Gestaltung berücksichtigen, dass Bewegung reduziert oder deaktiviert werden kann, ohne dass die Funktionalität oder Verständlichkeit der Mikrointeraktion verloren geht.",
+      "exampleGood": "TBD",
+      "exampleBad": "TBD",
+      "effectText": "TBD",
+      "userGroups": [
+        {
+          "title": "Nutzer mit vestibulären Einschränkungen",
+          "text": "Für Menschen mit vestibulären Einschränkungen können visuelle Bewegungen oder Animationen Schwindel, Übelkeit oder Desorientierung auslösen. Wenn Rückmeldungen in Mikrointeraktionen hauptsächlich über Bewegung vermittelt werden, kann dies dazu führen, dass die Interaktion nicht nur schwer verständlich, sondern auch körperlich belastend wird."
+        },
+        {
+          "title": "Nutzer mit kognitiven Einschränkungen",
+          "text": "Für Menschen mit kognitiven Einschränkungen können bewegungsbasierte Rückmeldungen schwer zu interpretieren sein, insbesondere wenn die Bedeutung der Bewegung nicht eindeutig erkennbar ist. Wenn Bewegung als zentraler Informationsträger eingesetzt wird, erhöht dies die kognitive Belastung und erschwert das schnelle Erfassen von Zustandsänderungen."
+        }
+      ],
+      "devicesText": "Die Problematik ist auf den Endgeräten unterschiedlich ausgeprägt. Auf Smartphones wird zwar tendenziell mehr Animation verwendet, um dem Nutzer eine bessere Orientierung zu geben, allerdings ist die Bewegung aufgrund des kleineren Bildschirms auch meist weniger problematisch für vestibulär eingeschränkte Menschen. Auf größeren Bildschirmen wie Desktop-Monitoren können Bewegungen stärker wirken, werden jedoch tendenziell zurückhaltender eingesetzt. Bei vielen assistiven Technologien, insbesondere für Menschen mit visuellen Einschränkungen, entfällt dieses Problem teilweise, da Bewegung nicht aufgenommen oder weitergegeben werden können.",
+      "designSystems": {
+        "material": "Material Design versteht Bewegung als ein zentrales Element der Gestaltung. Auf eine mögliche Reduced-Motion Option oder ähnliches gehen sie nicht ein.",
+        "carbon": "Carbon empfiehlt, Bewegung eher als ein unterstützendes Element zu verwenden und immer über mehrere Wege Feedback zu kommunizieren.",
+        "apple": "Auch Apple empfiehlt, Rückmeldungen über mehrere Gestaltungsarten zu vermitteln und Bewegung nur unterstützend einzusetzen."
+      }
+    },
+    {
+      "id": "persistent-content",
+      "problemKicker": "Das Problem der temporär begrenzten Inhalte",
+      "principleTitle": "Persistente und wiederauffindbare Inhalte statt flüchtiger Zustände",
+      "principleIntro": "Mikrointeraktionen sollten zentrale Informationen nicht ausschließlich temporär oder zustandsabhängig anzeigen. Werden Inhalte nur für kurze Zeit oder ausschließlich in bestimmten Interaktionszuständen wie Hover, Fokus oder während einer Animation eingeblendet, besteht die Gefahr, dass diese Informationen übersehen, nicht rechtzeitig erfasst oder nicht erneut aufgerufen werden können. Stattdessen sollten relevante Inhalte entweder dauerhaft sichtbar sein oder jederzeit erneut zugänglich gemacht werden können. Wenn temporäre Einblendungen eingesetzt werden, müssen diese so gestaltet sein, dass Nutzer*innen ausreichend Zeit haben, sie wahrzunehmen, zu verstehen und bei Bedarf wieder aufzurufen. Auf diese Weise wird verhindert, dass wichtige Informationen an flüchtige Interaktionszustände gebunden sind.",
+      "exampleGood": "TBD",
+      "exampleBad": "TBD",
+      "effectText": "TBD",
+      "userGroups": [
+        {
+          "title": "Nutzer mit kognitiven Einschränkungen",
+          "text": "Menschen mit kognitiven Einschränkungen haben unter Umständen nicht ausreichend Zeit, diese Informationen zu verarbeiten, was besonders problematisch ist, wenn die Informationen nicht wieder abrufbar sind."
+        }
+      ],
+      "devicesText": "Dieses Problem tritt besonders häufig bei Desktop-Nutzung auf, da viele dieser Elemente an Hover-Zustände gekoppelt sind. Auf Smartphones und Tablets werden alternative Auslöser verwendet, was jedoch das Wiederfinden der Informationen erschweren kann. Assistive Technologien orientieren sich an dem Document Object Model (DOM), sind die Informationen hier nicht zugänglich, hat der Screenreader oder eine ähnliche Technologie keine Möglichkeit sie zu erfassen.",
+      "designSystems": {
+        "material": "Material Design thematisiert diesen Aspekt nicht.",
+        "carbon": "Carbon bezieht in diesem Zusammenhang auf ihre Accessibility Checklist und somit die WCAG, welche fordern, dass diese zeitlich begrenzte Elemente verlängert oder pausiert werden können.",
+        "apple": "Die Human Interface Guidelines empfehlen, zeitlich begrenzte Elemente zu minimieren oder manuelle Steuerungsmöglichkeiten anzubieten."
+      }
+    },
+    {
+      "id": "prioritize-feedback",
+      "problemKicker": "Das Problem mehrerer Effekte gleichzeitig",
+      "principleTitle": "Klar priorisierte Rückmeldungen statt gleichzeitiger Effekte",
+      "principleIntro": "Mikrointeraktionen sollten Rückmeldungen klar priorisieren und nicht mehrere visuelle Effekte gleichzeitig einsetzen. Werden Farbänderungen, Bewegungen, Größenveränderungen, Schatten oder Inhaltseinblendungen parallel verwendet, kann dies zu einer Überlagerung von Signalen führen. Nutzer*innen müssen dann selbst interpretieren, welche Veränderung relevant ist, was die Verständlichkeit und Eindeutigkeit der Rückmeldung beeinträchtigt. Stattdessen sollten Mikrointeraktionen so gestaltet sein, dass eine primäre Rückmeldung klar im Vordergrund steht und unterstützende Effekte gezielt und zurückhaltend eingesetzt werden. Eine klare Hierarchie innerhalb der Rückmeldung hilft dabei, die Bedeutung einer Interaktion schnell zu erfassen und reduziert die kognitive Belastung, insbesondere bei komplexeren Interfaces.",
+      "exampleGood": "TBD",
+      "exampleBad": "TBD",
+      "effectText": "TBD",
+      "userGroups": [
+        {
+          "title": "Nutzer mit kognitiven Einschränkungen",
+          "text": "Wenn mehrere visuelle Effekte gleichzeitig auftreten, kann es für Menschen mit kognitiven Einschränkungen schwierig sein, die relevante Rückmeldung zu erkennen. Eine klare Priorisierung von Rückmeldungen hilft dabei, Interaktionen schneller zu verstehen und reduziert die kognitive Belastung."
+        },
+        {
+          "title": "Nutzer mit visuellen Einschränkungen",
+          "text": "Wenn mehrere visuelle Effekte gleichzeitig auftreten, kann es für Menschen mit kognitiven Einschränkungen schwierig sein, die relevante Rückmeldung zu erkennen. Eine klare Priorisierung von Rückmeldungen hilft dabei, Interaktionen schneller zu verstehen und reduziert die kognitive Belastung."
+        }
+      ],
+      "devicesText": "Dieses Problem fällt bei den unterschiedlichen Bildschirmgrößen weniger oder mehr auf. Da Animationen auf Smartphones allerdings meist vermehrt auftreten, kommt es hier häufig zu dieser Problematik.",
+      "designSystems": {
+        "material": "Material Design spricht dieses Problemfeld nicht explizit an.",
+        "carbon": "Das Problem wird hier nur sehr indirekt und nicht explizit erwähnt. IBMs Accessibility Guidelines berufen sich stark auf die WCAG 2.2, wo das Problem hier indirekt adressiert wird (Pause, Stop, Hide).",
+        "apple": "Die HIG warnen explizit vor Überforderung durch zu viel Bewegung, dabei wird sich allerdings nur auf Bewegung bezogen, nicht auf zu viele Effekte generell."
+      }
+    },
+    {
+      "id": "spatial-stability",
+      "problemKicker": "Das Problem von unerwarteten Layout- und Positionswechseln",
+      "principleTitle": "Vorhersehbare und räumlich stabile Zustandsänderungen",
+      "principleIntro": "Mikrointeraktionen sollten keine unerwarteten Layout- oder Positionswechsel auslösen, die die räumliche Orientierung der Nutzerinnen beeinträchtigen. Wenn sich Inhalte durch eine Interaktion plötzlich verschieben, neu anordnen oder der sichtbare Bereich der Seite springt, wird der Zusammenhang zwischen Aktion und Reaktion geschwächt. Dies kann zu Verunsicherung führen und erschwert es, den aktuellen Interaktionskontext nachzuvollziehen. Stattdessen sollten Zustandsänderungen räumlich stabil und nachvollziehbar gestaltet sein. Veränderungen im Layout müssen vorhersehbar sein und klar kommunizieren, was sich verändert hat und warum. Wenn Inhalte ein- oder ausgeblendet werden, sollte dies ohne abrupte Positionswechsel erfolgen oder so umgesetzt sein, dass der Fokus und die Orientierung der Nutzerinnen erhalten bleiben.",
+      "exampleGood": "TBD",
+      "exampleBad": "TBD",
+      "effectText": "TBD",
+      "userGroups": [
+        {
+          "title": "Nutzer mit kognitiven Einschränkungen",
+          "text": "Für Menschen mit kognitiven Einschränkungen können unerwartete Layout- oder Positionswechsel die Orientierung innerhalb einer Seite erschweren, wenn sich bereits an ein Layout gewöhnt wurde. Bei Neuanordnung oder Verschiebung der Inhalte wird der Zusammenhang zwischen Interaktion und Ergebnis schwerer nachvollziehbar."
+        },
+        {
+          "title": "Nutzer mit vestibulären Einschränkungen",
+          "text": "Bei starker Bewegung während des Positionswechsels können auch vestibulär eingeschränkte Nutzer betroffen sein. Solche Veränderungen können Desorientierung auslösen und im schlimmsten Fall Symptome wie Schwindel oder Unwohlsein verstärken."
+        }
+      ],
+      "devicesText": "Besonders auf größeren Bildschirmen treten diese Problematiken verstärkt auf, da hier vielfältigere Layoutvarianten möglich sind. Auch assistive Technologien können hier Probleme haben, da unterschiedliche Layouts häufig zu veränderten Fokusreihenfolgen führen.",
+      "designSystems": {
+        "material": "Material Design bezieht sich auf dieses Problem in ihren Vorgaben nicht.",
+        "carbon": "Bei Carbon lassen sich hierzu lediglich indirekte Hinweise finden: „Pattern repetition where appropriate is essential to reduce cognitive load“.",
+        "apple": "Die HIG thematisieren dieses Problem nicht konkret."
+      }
+    }
+  ]
+}
