@@ -18,7 +18,7 @@ section {
         color: var(--color-blue-dark);
     }
 
-    h2 {
+    h2, h5 {
         display: flex;
         align-items: center;
         gap: var(--m);
@@ -30,6 +30,14 @@ section {
         height: 4px;
         margin-right: calc(var(--xl) * -1);
         background-color: var(--color-blue-dark);
+    }
+
+    h5::after {
+        content: '';
+        flex: 1;
+        height: 3px;
+        margin-right: calc(var(--xl) * -1);
+        background-color: var(--color-blue-light);
     }
 }
 
@@ -54,4 +62,17 @@ section {
         flex-direction: column;
         gap: var(--xs);
     }
+}
+
+.examples{
+  display: flex;
+  gap: 40px;
+}
+
+.example{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* horizontale Zentrierung */
+  text-align: center;    /* Text ebenfalls mittig */
 }

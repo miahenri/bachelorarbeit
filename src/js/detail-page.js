@@ -5,13 +5,13 @@
     const id = params.get("id");
 
     const res = await fetch("./src/principles.json");
-    if (!res.ok) throw new Error(`JSON konnte nicht geladen werden (${res.status})`);
+    if (!res.ok)
+      throw new Error(`JSON konnte nicht geladen werden (${res.status})`);
 
     const data = await res.json();
     const principles = data.principles || [];
 
-    const principle =
-      principles.find(p => p.id === id) || principles[0];
+    const principle = principles.find((p) => p.id === id) || principles[0];
 
     if (!principle) {
       renderNotFound();
@@ -33,12 +33,11 @@
     setText("ds-apple-text", principle.designSystems?.apple);
 
     // Beispiele: erstmal als Text/HTML (du kannst später Interaktionen per JS rendern)
-    setHTML("example-good", principle.exampleGood);
-    setHTML("example-bad", principle.exampleBad);
+    renderDemo("example-bad", principle.exampleBad);
+    renderDemo("example-good", principle.exampleGood);
 
     // Nutzergruppen rendern (Cards/Spalten)
     renderUserGroups("user-groups", principle.userGroups);
-
   } catch (err) {
     console.error(err);
     renderError("Beim Laden der Inhalte ist ein Fehler aufgetreten.");
@@ -50,13 +49,29 @@
     el.textContent = value ?? "";
   }
 
-  function setHTML(id, value) {
-    const el = document.getElementById(id);
-    if (!el) return;
+  function renderDemo(containerId, demoKey) {
+    const mount = document.getElementById(containerId);
+    if (!mount) return;
 
-    // Wenn du hier wirklich HTML aus JSON rendern willst:
-    // - nur dann nutzen, wenn du der Quelle vertraust (deine eigenen Inhalte)
-    el.innerHTML = value ?? "";
+    // Container leeren
+    mount.innerHTML = "";
+
+    // Wenn noch kein Beispiel definiert ist
+    if (!demoKey || demoKey === "TBD") {
+      mount.innerHTML = `<p class="demo-note">Beispiel folgt.</p>`;
+      return;
+    }
+
+    // Demo-Funktion aus demos.js holen
+    const demoFunction = window.DEMOS?.[demoKey];
+
+    if (typeof demoFunction !== "function") {
+      mount.innerHTML = `<p class="demo-note">Demo nicht gefunden: ${demoKey}</p>`;
+      return;
+    }
+
+    // Demo rendern
+    demoFunction(mount);
   }
 
   function renderUserGroups(containerId, groups = []) {
@@ -65,7 +80,7 @@
 
     container.innerHTML = "";
 
-    (groups || []).forEach(g => {
+    (groups || []).forEach((g) => {
       const col = document.createElement("div");
 
       const h4 = document.createElement("h4");
@@ -81,7 +96,8 @@
   }
 
   function renderNotFound() {
-    document.body.innerHTML = "<h1>Prinzip nicht gefunden</h1><p>Bitte zurück zur Übersicht.</p>";
+    document.body.innerHTML =
+      "<h1>Prinzip nicht gefunden</h1><p>Bitte zurück zur Übersicht.</p>";
   }
 
   function renderError(msg) {

@@ -5,6 +5,7 @@
     <title>Gestaltungsprinzip</title>
     <link rel="stylesheet" href="./src/styles/combined.css" />
     <link rel="stylesheet" href="./src/styles/detail-ansicht.css" />
+    <link rel="stylesheet" href="./src/styles/demos.css" />
   </head>
   <body>
     <header>
@@ -26,12 +27,18 @@
       <!-- <svg></svg> -->
       <p id="principle-intro"></p>
     </section>
-    <section class="text-section line">
-      <!-- Interaktive Beispiele -->
-      <div class="example-wrap">
-        <div id="example-good" class="example-panel"></div>
-        <div id="example-bad" class="example-panel hidden"></div>
+    <section class="examples">
+      <div class="example">
+        <h3>Negatives Beispiel</h3>
+        <div id="example-bad"></div>
       </div>
+
+      <div class="example">
+        <h3>Positives Beispiel</h3>
+        <div id="example-good"></div>
+      </div>
+    </section>
+    <section class="text-section line">
       <h2>DER EFFEKT</h2>
       <p id="effect-text"></p>
     </section>
@@ -63,13 +70,26 @@
           <p id="ds-material-text"></p>
         </div>
         <div>
-          <h4>Carbon Design System</h4>
+          <h4>Carbon (IBM)</h4>
           <p id="ds-carbon-text"></p>
         </div>
         <div>
-          <h4>Apple Human Interface Guidelines</h4>
+          <h4>Apple HIG</h4>
           <p id="ds-apple-text"></p>
         </div>
+      </div>
+    </section>
+    <section>
+      <div class="text-section line">
+        <h5>Weitere Informationen</h5>
+        <!-- <div>
+          <h4>Ressource 1</h4>
+          <p></p>
+        </div>
+        <div>
+          <h4>Ressource 2</h4>
+          <p></p>
+        </div> -->
       </div>
     </section>
     <footer>
@@ -78,6 +98,7 @@
       <a href="#">Github Repository</a>
       <a href="#">Einstellungen</a>
     </footer>
+    <script src="./src/js/demos.js" defer></script>
     <script src="./src/js/detail-page.js" defer></script>
   </body>
 </html>

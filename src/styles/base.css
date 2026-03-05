@@ -48,6 +48,12 @@ h2 {
   font-weight: var(--fw-semi-bold);
 }
 
+h5 {
+  font-size: var(--fs-m);
+  font-weight: var(--fw-semi-bold);
+  color: var(--color-blue-light);
+}
+
 footer {
   display: flex;
   justify-content: center;
