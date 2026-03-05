@@ -7,7 +7,8 @@
       "principleIntro": "Mikrointeraktionen sollten Rückmeldungen nicht ausschließlich über einen einzelnen visuellen Kanal wie Farbe oder Kontrast vermitteln. Wird Feedback nur über subtile Farbänderungen oder Kontrastunterschiede kommuniziert, setzt dies eine uneingeschränkte visuelle Wahrnehmung voraus und schließt Nutzer*innen mit Sehbeeinträchtigungen, Farbenblindheit oder eingeschränkter Kontrastwahrnehmung teilweise oder vollständig aus. Stattdessen sollten Rückmeldungen redundant gestaltet werden, indem mehrere gleichwertige visuelle Hinweise kombiniert werden. Dazu zählen beispielsweise die Ergänzung von Farbänderungen durch Formveränderungen, Icons, Unterstreichungen, klare Fokusindikatoren oder textuelle Hinweise. Auf diese Weise bleibt die Rückmeldung auch dann verständlich, wenn ein einzelner Wahrnehmungskanal nicht zuverlässig genutzt werden kann.",
       "exampleBad": "redundant-buttons-bad",
       "exampleGood": "redundant-buttons-good",
-      "effectText": "Im negativen Beispiel wird die Rückmeldung ausschließlich über eine sehr subtile Kontraständerung vermittelt. Solche feinen visuellen Unterschiede können von vielen Nutzerinnen und Nutzern schwer wahrgenommen werden, insbesondere von Menschen mit visuellen oder kognitiven Einschränkungen. Dadurch besteht die Gefahr, dass der Interaktionszustand nicht erkannt oder falsch interpretiert wird. Im positiven Beispiel wird die Rückmeldung über mehrere visuelle Hinweise vermittelt. Neben einer deutlicheren Farbänderung erscheinen auch ein Icon und eine veränderte Beschriftung. Diese redundanten Signale machen den neuen Zustand klarer erkennbar und ermöglichen es auch Nutzerinnen und Nutzern mit unterschiedlichen Wahrnehmungsvoraussetzungen, die Rückmeldung zuverlässig zu verstehen.",
+      "effectTextNeg": "Im negativen Beispiel wird die Rückmeldung ausschließlich über eine sehr subtile Kontraständerung vermittelt. Solche feinen visuellen Unterschiede können von vielen Nutzerinnen und Nutzern schwer wahrgenommen werden, insbesondere von Menschen mit visuellen oder kognitiven Einschränkungen. Dadurch besteht die Gefahr, dass der Interaktionszustand nicht erkannt oder falsch interpretiert wird, was zu Verwirrung oder Fehlern führen kann.",
+      "effectTextPos": "Im positiven Beispiel wird die Rückmeldung über mehrere visuelle Hinweise vermittelt. Neben einer deutlicheren Farbänderung erscheinen auch ein Icon und eine veränderte Beschriftung. Diese redundanten Signale machen den neuen Zustand klarer erkennbar und ermöglichen es auch Nutzerinnen und Nutzern mit unterschiedlichen Wahrnehmungsvoraussetzungen, die Rückmeldung zuverlässig zu verstehen.",
       "userGroups": [
         {
           "title": "Menschen mit visuellen Einschränkungen",
@@ -30,9 +31,10 @@
       "problemKicker": "Das Problem der ungleichwertigen Hover- und Fokuszustände",
       "principleTitle": "Gleichwertige Interaktionszustände unabhängig von Eingabemethoden",
       "principleIntro": "Mikrointeraktionen sollten Hover- und Fokuszustände visuell und funktional gleichwertig gestalten. Wenn Rückmeldungen, Zusatzinformationen oder Zustandsänderungen ausschließlich an Hover-Zustände geknüpft sind, werden sie nur für Mausnutzende zugänglich. Tastatur- und assistive Nutzungskontexte erhalten dadurch eine eingeschränkte oder unvollständige Interaktionserfahrung. Stattdessen sollten alle interaktiven Zustände so konzipiert sein, dass sie unabhängig von der Eingabemethode verständlich und nutzbar sind. Rückmeldungen, die beim Hover erscheinen, müssen ebenso beim Tastaturfokus verfügbar sein und vergleichbare Informationen vermitteln. Dadurch wird sichergestellt, dass Mikrointeraktionen nicht implizit eine bestimmte Eingabeform voraussetzen, sondern konsistent und inklusiv funktionieren.",
-      "exampleGood": "TBD",
-      "exampleBad": "TBD",
-      "effectText": "TBD",
+      "exampleGood": "equivalent-tooltip-good",
+      "exampleBad": "equivalent-tooltip-bad",
+      "effectTextNeg": "Im negativen Beispiel wird der Tooltip ausschließlich durch einen Hover-Zustand ausgelöst. Dadurch ist die zusätzliche Information nur für Nutzerinnen und Nutzer sichtbar, die mit einer Maus interagieren. Personen, die eine Tastatur oder assistive Technologien verwenden, können den Tooltip hingegen nicht aufrufen und erhalten somit keinen Zugang zu den enthaltenen Informationen.",
+      "effectTextPos": "Im positiven Beispiel wird der Tooltip sowohl bei Hover als auch bei Tastaturfokus angezeigt. Dadurch stehen die zusätzlichen Informationen unabhängig von der verwendeten Eingabemethode zur Verfügung. Nutzerinnen und Nutzer, die auf Tastatursteuerung angewiesen sind, können den gleichen Inhalt wahrnehmen wie Mausnutzende, wodurch die Interaktion insgesamt zugänglicher und konsistenter wird.",
       "userGroups": [
         {
           "title": "Menschen mit motorischen Einschränkungen",
@@ -53,7 +55,8 @@
       "principleIntro": "Mikrointeraktionen sollten Bewegung nicht als alleinigen oder zentralen Informationsträger einsetzen. Wird Feedback primär oder ausschließlich über Animationen, Übergänge oder Bewegungen vermittelt, setzt dies voraus, dass Nutzer*innen diese Bewegung wahrnehmen, verarbeiten und tolerieren können. Für bewegungssensible Personen oder Nutzungskontexte mit reduzierter Bewegung führt dies dazu, dass Rückmeldungen abgeschwächt oder vollständig unverständlich werden. Stattdessen sollte Bewegung nur eine unterstützende Rolle einnehmen und stets durch gleichwertige statische Rückmeldungen ergänzt werden. Zustandsänderungen müssen auch ohne Bewegung eindeutig erkennbar bleiben, etwa durch klare visuelle Markierungen, textuelle Hinweise oder strukturelle Veränderungen. Zusätzlich sollte die Gestaltung berücksichtigen, dass Bewegung reduziert oder deaktiviert werden kann, ohne dass die Funktionalität oder Verständlichkeit der Mikrointeraktion verloren geht.",
       "exampleGood": "TBD",
       "exampleBad": "TBD",
-      "effectText": "TBD",
+      "effectTextNeg": "TBD",
+      "effectTextPos": "TBD",
       "userGroups": [
         {
           "title": "Nutzer mit vestibulären Einschränkungen",
@@ -78,7 +81,8 @@
       "principleIntro": "Mikrointeraktionen sollten zentrale Informationen nicht ausschließlich temporär oder zustandsabhängig anzeigen. Werden Inhalte nur für kurze Zeit oder ausschließlich in bestimmten Interaktionszuständen wie Hover, Fokus oder während einer Animation eingeblendet, besteht die Gefahr, dass diese Informationen übersehen, nicht rechtzeitig erfasst oder nicht erneut aufgerufen werden können. Stattdessen sollten relevante Inhalte entweder dauerhaft sichtbar sein oder jederzeit erneut zugänglich gemacht werden können. Wenn temporäre Einblendungen eingesetzt werden, müssen diese so gestaltet sein, dass Nutzer*innen ausreichend Zeit haben, sie wahrzunehmen, zu verstehen und bei Bedarf wieder aufzurufen. Auf diese Weise wird verhindert, dass wichtige Informationen an flüchtige Interaktionszustände gebunden sind.",
       "exampleGood": "TBD",
       "exampleBad": "TBD",
-      "effectText": "TBD",
+      "effectTextNeg": "TBD",
+      "effectTextPos": "TBD",
       "userGroups": [
         {
           "title": "Nutzer mit kognitiven Einschränkungen",
@@ -99,7 +103,8 @@
       "principleIntro": "Mikrointeraktionen sollten Rückmeldungen klar priorisieren und nicht mehrere visuelle Effekte gleichzeitig einsetzen. Werden Farbänderungen, Bewegungen, Größenveränderungen, Schatten oder Inhaltseinblendungen parallel verwendet, kann dies zu einer Überlagerung von Signalen führen. Nutzer*innen müssen dann selbst interpretieren, welche Veränderung relevant ist, was die Verständlichkeit und Eindeutigkeit der Rückmeldung beeinträchtigt. Stattdessen sollten Mikrointeraktionen so gestaltet sein, dass eine primäre Rückmeldung klar im Vordergrund steht und unterstützende Effekte gezielt und zurückhaltend eingesetzt werden. Eine klare Hierarchie innerhalb der Rückmeldung hilft dabei, die Bedeutung einer Interaktion schnell zu erfassen und reduziert die kognitive Belastung, insbesondere bei komplexeren Interfaces.",
       "exampleGood": "TBD",
       "exampleBad": "TBD",
-      "effectText": "TBD",
+      "effectTextNeg": "TBD",
+      "effectTextPos": "TBD",
       "userGroups": [
         {
           "title": "Nutzer mit kognitiven Einschränkungen",
@@ -124,7 +129,8 @@
       "principleIntro": "Mikrointeraktionen sollten keine unerwarteten Layout- oder Positionswechsel auslösen, die die räumliche Orientierung der Nutzerinnen beeinträchtigen. Wenn sich Inhalte durch eine Interaktion plötzlich verschieben, neu anordnen oder der sichtbare Bereich der Seite springt, wird der Zusammenhang zwischen Aktion und Reaktion geschwächt. Dies kann zu Verunsicherung führen und erschwert es, den aktuellen Interaktionskontext nachzuvollziehen. Stattdessen sollten Zustandsänderungen räumlich stabil und nachvollziehbar gestaltet sein. Veränderungen im Layout müssen vorhersehbar sein und klar kommunizieren, was sich verändert hat und warum. Wenn Inhalte ein- oder ausgeblendet werden, sollte dies ohne abrupte Positionswechsel erfolgen oder so umgesetzt sein, dass der Fokus und die Orientierung der Nutzerinnen erhalten bleiben.",
       "exampleGood": "TBD",
       "exampleBad": "TBD",
-      "effectText": "TBD",
+      "effectTextNeg": "TBD",
+      "effectTextPos": "TBD",
       "userGroups": [
         {
           "title": "Nutzer mit kognitiven Einschränkungen",

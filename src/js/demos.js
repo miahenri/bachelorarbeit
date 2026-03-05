@@ -10,7 +10,6 @@ window.DEMOS = {
   },
 
   "redundant-buttons-good": (container) => {
-
     container.innerHTML = `
       <button class="demo-btn good" id="good-save-btn">
         <span class="text">Klick mich</span>
@@ -28,6 +27,31 @@ window.DEMOS = {
         text.textContent = "Geklickt";
       });
     }
+  },
 
+  "equivalent-tooltip-bad": (container) => {
+    container.innerHTML = `
+      <div class="tooltip-wrapper bad">
+    <button class="tooltip-btn">
+      Info
+    </button>
+    <span class="tooltip">
+      Zusätzliche Information
+    </span>
+  </div>
+    `;
+  },
+
+    "equivalent-tooltip-good": (container) => {
+    container.innerHTML = `
+        <div class="tooltip-wrapper good">
+    <button class="tooltip-btn">
+      Info
+    </button>
+    <span class="tooltip">
+      Zusätzliche Information
+    </span>
+  </div>
+    `;
   }
 };

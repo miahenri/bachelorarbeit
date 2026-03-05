@@ -25,7 +25,8 @@
     setText("problem-kicker", principle.problemKicker);
     setText("principle-title", principle.principleTitle);
     setText("principle-intro", principle.principleIntro);
-    setText("effect-text", principle.effectText);
+    setText("effect-text-neg", principle.effectTextNeg);
+    setText("effect-text-pos", principle.effectTextPos);
     setText("devices-text", principle.devicesText);
 
     setText("ds-material-text", principle.designSystems?.material);
