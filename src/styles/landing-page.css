@@ -1,0 +1,135 @@
+h1 {
+  font-size: var(--fs-xxl);
+  color: var(--color-blue-dark);
+  text-align: right;
+  padding-right: var(--xl);
+  padding-left: var(--xl);
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: var(--xxxl) 0;
+  text-align: right;
+
+  p {
+    padding: var(--l) var(--xl);
+    color: var(--color-lightest);
+  }
+}
+
+h3 {
+  padding-right: var(--xl);
+  color: var(--color-blue-dark);
+}
+
+.index-section {
+  margin-left: var(--xl);
+  margin-bottom: var(--xxxl);
+
+  p {
+    padding-right: var(--xl);
+    color: var(--color-darkest);
+  }
+
+  h4 {
+    font-size: var(--fs-m);
+    padding-top: var(--l);
+    color: var(--color-blue-dark);
+  }
+}
+
+.line {
+  h2,
+  h3 {
+    color: var(--color-blue-dark);
+  }
+
+  h2,
+  h5 {
+    display: flex;
+    align-items: center;
+    gap: var(--m);
+  }
+
+  h2::after {
+    content: "";
+    flex: 1;
+    height: 4px;
+    background-color: var(--color-blue-dark);
+  }
+
+  h5::after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background-color: var(--color-blue-light);
+  }
+}
+
+.icon-columns {
+  display: flex;
+  flex-direction: row;
+  margin-top: var(--m);
+  margin-right: var(--xl);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--m);
+    width: 100%;
+
+    h6 {
+      font-size: var(--fs-s);
+      font-weight: var(--fw-semi-bold);
+      color: var(--color-blue-dark);
+      padding-top: var(--s);
+      padding-bottom: var(--xxs);
+    }
+
+    p {
+      font-size: var(--fs-xs);
+      color: var(--color-darkest);
+      text-align: center;
+      padding: 0;
+    }
+  }
+}
+
+.link-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s);
+  list-style: none;
+  padding: 0;
+  margin-top: var(--l);
+  margin-right: var(--xl);
+
+  li {
+
+    a {
+      display: block;
+      padding: var(--s);
+      text-decoration: none;
+      color: var(--color-lightest);
+      border: 2px solid var(--color-lightest);
+      border-radius: 8px;
+      font-weight: var(--fw-semi-bold);
+      background-color: var(--color-blue-light);
+      transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+        background-color: var(--color-blue-lightest);
+        color: var(--color-blue-dark);
+        transform: translateY(-2px);
+        font-weight: var(--fw-bold);
+        border: 2px solid var(--color-blue-light);
+    }
+  }
+}
