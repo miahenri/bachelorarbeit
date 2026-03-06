@@ -2,9 +2,9 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <title>Gestaltungsprinzip</title>
+    <title>Barrierefreie Gestaltung von Mikrointeraktionen im Web</title>
     <link rel="stylesheet" href="./src/styles/combined.css" />
-    <link rel="stylesheet" href="./src/styles/detail-ansicht.css" />
+    <link rel="stylesheet" href="./src/styles/landing-page.css" />
   </head>
   <body>
     <header>
@@ -20,16 +20,15 @@
         <span class="menu-icon hidden">☰</span>
       </nav>
     </header>
-    <section class="title-section blue-background">
+    <section class="title-section">
       <h3>
         Eine Bachelorarbeit im Studiengang Medieninformatik an der TH Köln
       </h3>
       <h1>
-        Barrierefreie Gestaltung von Mikrointeraktionen im Web: Identifikation
-        typischer Barrieren und Lösungsansätze
+        Barrierefreie Gestaltung von Mikrointeraktionen im Web
       </h1>
       <!-- <svg></svg> -->
-      <p>
+      <p class="blue-background">
         Mikrointeraktionen sind ein zentraler Bestandteil moderner
         Webanwendungen. Sie geben Rückmeldung, unterstützen die Orientierung und
         tragen maßgeblich zur wahrgenommenen Qualität digitaler Interfaces bei.
@@ -43,6 +42,54 @@
         entstehen können und wie sie im Sinne der digitalen Barrierefreiheit
         verbessert werden können.
       </p>
+    </section>
+    <section class="index-section line">
+      <h2>MIKROINTERAKTIONEN</h2>
+      <h3>Was heißt das eigentlich?</h3>
+      <p>Mikrointeraktionen sind kleine, meist sehr kurze Interaktionen innerhalb digitaler Benutzeroberflächen. Sie entstehen immer dann, wenn Nutzerinnen und Nutzer eine konkrete Aktion ausführen und das System darauf unmittelbar reagiert. Beispiele dafür sind das visuelle Feedback beim Klicken eines Buttons, das Anzeigen einer Fehlermeldung nach einer falschen Eingabe oder eine kurze Animation beim Absenden eines Formulars. Solche Interaktionen dauern oft nur wenige Augenblicke und stehen selten im Mittelpunkt der Aufmerksamkeit, begleiten jedoch nahezu jede digitale Handlung.
+Obwohl Mikrointeraktionen häufig unscheinbar wirken, erfüllen sie eine wichtige Funktion für die Verständlichkeit und Nutzbarkeit von Interfaces. Sie geben Rückmeldung darüber, ob eine Aktion erfolgreich war, zeigen Zustandsänderungen an oder unterstützen die Orientierung innerhalb einer Anwendung. Dadurch helfen sie Nutzerinnen und Nutzern zu verstehen, was gerade passiert ist und welche Möglichkeiten als Nächstes bestehen.</p>
+        <h4>Die 4 Bausteine einer Mikrointeraktion</h4>
+        <h3>nach Dan Saffer</h3>
+        <div class="icon-columns">
+          <div>
+            <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="2.8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#005ab2"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.5027 9.96958C20.7073 10.4588 20.6154 12.1941 19.3658 12.5533L13.0605 14.3658L10.1807 20.2606C9.60996 21.4288 7.88499 21.218 7.6124 19.9468L4.67677 6.25646C4.44638 5.18204 5.5121 4.2878 6.53019 4.70126L19.5027 9.96958Z" stroke="#005ab2" stroke-width="2.8"></path></svg>
+            <h6>Auslöser</h6>
+            <p>Löst die Mikrointeraktion durch eine Handlung oder ein Ereignis aus. </p>
+          </div>
+          <div>
+            <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" viewBox="0 0 24 24" stroke-width="2.8" fill="none" xmlns="http://www.w3.org/2000/svg" color="#005ab2"><path d="M8.5 4H6C4.89543 4 4 4.89543 4 6V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V6C20 4.89543 19.1046 4 18 4H15.5" stroke="#005ab2" stroke-width="2.8" stroke-linecap="round"></path><path d="M8 6.4V4.5C8 4.22386 8.22386 4 8.5 4C8.77614 4 9.00422 3.77604 9.05152 3.50398C9.19968 2.65171 9.77399 1 12 1C14.226 1 14.8003 2.65171 14.9485 3.50398C14.9958 3.77604 15.2239 4 15.5 4C15.7761 4 16 4.22386 16 4.5V6.4C16 6.73137 15.7314 7 15.4 7H8.6C8.26863 7 8 6.73137 8 6.4Z" stroke="#005ab2" stroke-width="2.8" stroke-linecap="round"></path></svg>
+            <h6>Regeln</h6>
+            <p>Bestimmen, wie das System auf den Trigger reagiert.</p>
+          </div>
+          <div>
+            <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="2.8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#005ab2"><path d="M7.5 22C10.5376 22 13 19.5376 13 16.5C13 13.4624 10.5376 11 7.5 11C4.46243 11 2 13.4624 2 16.5C2 17.5018 2.26783 18.441 2.7358 19.25L2.275 21.725L4.75 21.2642C5.55898 21.7322 6.49821 22 7.5 22Z" stroke="#005ab2" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.2824 17.8978C16.2587 17.7405 17.1758 17.4065 18 16.9297L21.6 17.6L20.9297 14C21.6104 12.8233 22 11.4571 22 10C22 5.58172 18.4183 2 14 2C9.97262 2 6.64032 4.97598 6.08221 8.84884" stroke="#005ab2" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <h6>Feedback</h6>
+            <p>Zeigt den Nutzerinnen und Nutzern das Ergebnis der Aktion.</p>
+          </div>
+          <div>
+            <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="2.8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#005ab2"><path d="M17 17H8C6.33333 17 3 16 3 12C3 8 6.33333 7 8 7H16C17.6667 7 21 8 21 12C21 13.4943 20.5348 14.57 19.865 15.3312" stroke="#005ab2" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 14.5L17 17L14.5 19.5" stroke="#005ab2" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <h6>Loops und Modi</h6>
+            <p>Steuern, wie sich die Interaktion über Zeit oder Nutzung verändert.</p>
+          </div>
+        </div>
+      </section>
+      <section class="index-section line">
+        <h2>BARIERREFREIHEIT</h2>
+        <h3>Mikrointeraktionen im Kontext digitaler Barrierefreiheit</h3>
+      <p>Trotz der positiven Effekte interaktiver Elemente lassen sich weiterhin in vielen Webinterfaces Barrieren finden, die Zugang und Nutzung für Menschen mit Einschränkungen erschweren. Gängige Beispiele dafür sind Drag-and-Drop Funktionen, die sich von Nutzern mit motorischen Einschränkungen nur schwer bedienen lassen, oder auch Bilder und grafische Darstellungen, die keine alternative Textbeschreibung bieten und somit von visuell eingeschränkten Menschen nicht aufgenommen werden können. Auch Bewegungen und Animationen, die häufig durch Mikrointeraktionen ausgelöst werden, können schnell eine Überforderung oder Ablenkung für eingeschränkte Nutzer darstellen.</p>
+    </section>
+    <section class="index-section line">
+      <h2>GESTALTUNGSPRINZIPIEN</h2>
+      <h3>6 Prinzipien für barrierefreie Mikrointeraktionen</h3>
+      <p>Auf Basis einer Interface-Analyse konnten bestehende Mikrointeraktionen hinsichtlich ihrer Barrieren untersucht werden. Nach der Betrachtung der identifizierten Barrieren wurden sechs zentrale Problemfelder erkannt, die besonders häufig in den Webinterfaces zu beobachten waren. Diese konnten anschließend in Gestaltungsprinzipien überführt werden.</p>
+      <ul class="link-list">
+        <li><a href="detail-view.html?id=redundant-feedback">Redundante Rückmeldung statt einzelner visueller Signale</a></li>
+        <li><a href="detail-view.html?id=motion-not-primary">Bewegung als unterstützendes nicht zentrales Feedback</a></li>  
+        <li><a href="detail-view.html?id=prioritize-feedback">Klar priorisierte Rückmeldungen statt gleichzeitiger Effekte</a></li>
+        <li><a href="detail-view.html?id=spatial-stability">Vorhersehbare und räumlich stabile Zustandsänderungen</a></li>
+        <li><a href="detail-view.html?id=hover-focus-equivalence">Gleichwertige Interaktionszustände unabhängig von Eingabemethoden</a></li>
+        <li><a href="detail-view.html?id=persistent-content">Persistente und wiederauffindbare Inhalte statt flüchtiger Zustände</a></li>
+      </ul>
     </section>
     <footer>
       <a href="#">© 2026 Mia Henrichsmeyer</a>
