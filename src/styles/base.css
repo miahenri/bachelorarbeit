@@ -52,6 +52,7 @@ h5 {
   font-size: var(--fs-m);
   font-weight: var(--fw-semi-bold);
   color: var(--color-blue-light);
+  margin-bottom: var(--xs);
 }
 
 footer {

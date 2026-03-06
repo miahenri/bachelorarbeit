@@ -87,3 +87,11 @@ section {
   justify-content: top; /* vertikale Zentrierung */
   text-align: center;    /* Text ebenfalls mittig */
 }
+
+.info-link {
+    display: inline-block;
+            text-decoration: underline;
+            color: var(--color-blue-dark);
+            margin-top: var(--xs);
+            margin-bottom: var(--m);
+        }
