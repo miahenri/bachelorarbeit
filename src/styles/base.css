@@ -72,7 +72,7 @@ h5 {
 footer {
   display: flex;
   justify-content: center;
-  gap: var(--l);
+  gap: var(--xxl);
   padding: var(--m);
   margin: var(--s) 0;
 
