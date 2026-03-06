@@ -101,10 +101,10 @@
       "problemKicker": "Das Problem mehrerer Effekte gleichzeitig",
       "principleTitle": "Klar priorisierte Rückmeldungen statt gleichzeitiger Effekte",
       "principleIntro": "Mikrointeraktionen sollten Rückmeldungen klar priorisieren und nicht mehrere visuelle Effekte gleichzeitig einsetzen. Werden Farbänderungen, Bewegungen, Größenveränderungen, Schatten oder Inhaltseinblendungen parallel verwendet, kann dies zu einer Überlagerung von Signalen führen. Nutzer*innen müssen dann selbst interpretieren, welche Veränderung relevant ist, was die Verständlichkeit und Eindeutigkeit der Rückmeldung beeinträchtigt. Stattdessen sollten Mikrointeraktionen so gestaltet sein, dass eine primäre Rückmeldung klar im Vordergrund steht und unterstützende Effekte gezielt und zurückhaltend eingesetzt werden. Eine klare Hierarchie innerhalb der Rückmeldung hilft dabei, die Bedeutung einer Interaktion schnell zu erfassen und reduziert die kognitive Belastung, insbesondere bei komplexeren Interfaces.",
-      "exampleGood": "TBD",
-      "exampleBad": "TBD",
-      "effectTextNeg": "TBD",
-      "effectTextPos": "TBD",
+      "exampleGood": "prioritized-feedback-good",
+      "exampleBad": "prioritized-feedback-bad",
+      "effectTextNeg": "Im negativen Beispiel werden mehrere visuelle Rückmeldungen gleichzeitig eingesetzt. Farbwechsel, Animation, Skalierung sowie Änderungen von Icon, Text und Zähler treten parallel auf und konkurrieren miteinander. Dadurch wird es schwieriger zu erkennen, welche Veränderung eigentlich die zentrale Rückmeldung darstellt, was insbesondere für Menschen mit kognitiven Einschränkungen die Verständlichkeit der Interaktion beeinträchtigen kann.",
+      "effectTextPos": "Im positiven Beispiel wird die Rückmeldung klar priorisiert. Die Zustandsänderung wird in erster Linie durch das veränderte Icon vermittelt und durch Text und Zählerstand sinnvoll ergänzt. Dadurch bleibt die Interaktion verständlich und übersichtlich, ohne auf unterstützende Rückmeldungen zu verzichten.",
       "userGroups": [
         {
           "title": "Nutzer mit kognitiven Einschränkungen",

@@ -308,3 +308,117 @@
   opacity: 0;
   pointer-events: none;
 }
+
+/* Gestaltungsprinzip: Klar priorisierte Rückmeldungen */
+.like-demo{
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.like-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--color-blue-dark);
+  background: white;
+  color: var(--color-blue-dark);
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  min-width: 170px;
+  justify-content: center;
+}
+
+.like-btn:focus-visible{
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.like-icon{
+  font-size: 18px;
+  line-height: 1;
+}
+
+.like-count{
+  min-width: 2ch;
+}
+
+/* Schlechtes Beispiel */
+.like-btn.bad.animate{
+  animation: bad-like-chaos 0.6s ease;
+}
+
+.like-btn.bad.liked{
+  background: #ffe8ef;
+  color: #b0004b;
+  border-color: #b0004b;
+  transform: scale(1.04);
+  font-weight: 700;
+}
+
+@keyframes bad-like-chaos{
+
+  0%{
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(176,0,75,0);
+  }
+
+  20%{
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 0 0 10px rgba(176,0,75,0.18);
+  }
+
+  40%{
+    transform: scale(0.96) rotate(2deg);
+    box-shadow: 0 0 0 4px rgba(176,0,75,0.12);
+  }
+
+  60%{
+    transform: scale(1.08);
+    box-shadow: 0 0 0 8px rgba(176,0,75,0.15);
+  }
+
+  100%{
+    transform: scale(1.04);
+    box-shadow: 0 0 0 0 rgba(176,0,75,0);
+  }
+
+}
+
+.like-btn.bad.animate .like-icon svg path,
+.like-btn.bad.liked .like-icon svg path{
+  fill: #b0004b;
+  stroke: #b0004b;
+}
+
+/* Gutes Beispiel */
+.like-btn.good.liked{
+  background: #f3f8ff;
+  color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+}
+
+.like-btn.good .like-icon,
+.like-btn.good .like-text,
+.like-btn.good .like-count{
+  transition: color 0.2s;
+}
+
+.like-btn.good.liked .like-icon{
+  font-weight: 700;
+}
+
+.like-icon svg{
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: fill 0.2s, stroke 0.2s, transform 0.2s;
+}
+
+.like-btn.liked .like-icon svg{
+  fill: #b0004b;
+  stroke: #b0004b;
+}

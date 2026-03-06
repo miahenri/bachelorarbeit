@@ -193,4 +193,122 @@ window.DEMOS = {
     closeBtn.addEventListener("click", hideToast);
     reopenBtn.addEventListener("click", showToast);
   },
+
+  "prioritized-feedback-bad": (container) => {
+    container.innerHTML = `
+  <div class="like-demo">
+    <button type="button" class="like-btn bad">
+      <span class="like-icon" aria-hidden="true"></span>
+      <span class="like-text">Like</span>
+      <span class="like-count">24</span>
+    </button>
+  </div>
+  `;
+
+    const outlineHeart = `
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12.0106 6.00116C6.49992 1.00002 0.999923 8.00002 5.78098 13.0006L12.0106 20L18.2402 13.0006C22.9999 8.00001 17.4999 1.00002 12.0106 6.00116Z"
+    stroke="#b0004b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  `;
+
+    const filledHeart = `
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12.7491 20.6595L18.9336 13.5617C21.6106 10.6779 21.4927 7.05639 19.6883 4.85653C18.7902 3.7617 17.4815 3.04134 15.9684 3.00173C14.6753 2.96787 13.3163 3.43185 12.0051 4.44439C10.6896 3.43167 9.32733 2.96789 8.03225 3.00172C6.51713 3.04131 5.20686 3.7611 4.30832 4.85653C2.50241 7.05818 2.39278 10.6803 5.07965 13.5625L11.2634 20.6595C11.4521 20.8761 11.7224 21 12.0063 21C12.2901 21 12.5604 20.8761 12.7491 20.6595Z"
+    fill="#b0004b stroke="#b0004b"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round""/>
+  </svg>
+  `;
+
+    const button = container.querySelector(".like-btn");
+    const icon = container.querySelector(".like-icon");
+    const text = container.querySelector(".like-text");
+    const count = container.querySelector(".like-count");
+
+    icon.innerHTML = outlineHeart;
+
+    let liked = false;
+
+    button.addEventListener("click", () => {
+      liked = !liked;
+
+      if (liked) {
+        icon.innerHTML = filledHeart;
+        text.textContent = "Geliked";
+        count.textContent = "25";
+
+        button.classList.add("liked");
+
+        button.classList.remove("animate");
+        void button.offsetWidth;
+        button.classList.add("animate");
+      } else {
+        icon.innerHTML = outlineHeart;
+        text.textContent = "Like";
+        count.textContent = "24";
+
+        button.classList.remove("animate", "liked");
+      }
+    });
+
+    button.addEventListener("animationend", () => {
+      if (liked) button.classList.add("liked");
+      button.classList.remove("animate");
+    });
+  },
+
+  "prioritized-feedback-good": (container) => {
+    container.innerHTML = `
+  <div class="like-demo">
+    <button type="button" class="like-btn good">
+      <span class="like-icon" aria-hidden="true"></span>
+      <span class="like-text">Like</span>
+      <span class="like-count">24</span>
+    </button>
+  </div>
+  `;
+
+    const outlineHeart = `
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12.0106 6.00116C6.49992 1.00002 0.999923 8.00002 5.78098 13.0006L12.0106 20L18.2402 13.0006C22.9999 8.00001 17.4999 1.00002 12.0106 6.00116Z"
+    stroke="#b0004b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  `;
+
+    const filledHeart = `
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12.7491 20.6595L18.9336 13.5617C21.6106 10.6779 21.4927 7.05639 19.6883 4.85653C18.7902 3.7617 17.4815 3.04134 15.9684 3.00173C14.6753 2.96787 13.3163 3.43185 12.0051 4.44439C10.6896 3.43167 9.32733 2.96789 8.03225 3.00172C6.51713 3.04131 5.20686 3.7611 4.30832 4.85653C2.50241 7.05818 2.39278 10.6803 5.07965 13.5625L11.2634 20.6595C11.4521 20.8761 11.7224 21 12.0063 21C12.2901 21 12.5604 20.8761 12.7491 20.6595Z"
+    fill=""#b0004b"/>
+  </svg>
+  `;
+
+    const button = container.querySelector(".like-btn");
+    const icon = container.querySelector(".like-icon");
+    const text = container.querySelector(".like-text");
+    const count = container.querySelector(".like-count");
+
+    icon.innerHTML = outlineHeart;
+
+    let liked = false;
+
+    button.addEventListener("click", () => {
+      liked = !liked;
+
+      if (liked) {
+        icon.innerHTML = filledHeart;
+        text.textContent = "Geliked";
+        count.textContent = "25";
+
+        button.classList.add("liked");
+      } else {
+        icon.innerHTML = outlineHeart;
+        text.textContent = "Like";
+        count.textContent = "24";
+
+        button.classList.remove("liked");
+      }
+    });
+  },
 };
