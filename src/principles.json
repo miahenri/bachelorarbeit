@@ -79,10 +79,10 @@
       "problemKicker": "Das Problem der temporär begrenzten Inhalte",
       "principleTitle": "Persistente und wiederauffindbare Inhalte statt flüchtiger Zustände",
       "principleIntro": "Mikrointeraktionen sollten zentrale Informationen nicht ausschließlich temporär oder zustandsabhängig anzeigen. Werden Inhalte nur für kurze Zeit oder ausschließlich in bestimmten Interaktionszuständen wie Hover, Fokus oder während einer Animation eingeblendet, besteht die Gefahr, dass diese Informationen übersehen, nicht rechtzeitig erfasst oder nicht erneut aufgerufen werden können. Stattdessen sollten relevante Inhalte entweder dauerhaft sichtbar sein oder jederzeit erneut zugänglich gemacht werden können. Wenn temporäre Einblendungen eingesetzt werden, müssen diese so gestaltet sein, dass Nutzer*innen ausreichend Zeit haben, sie wahrzunehmen, zu verstehen und bei Bedarf wieder aufzurufen. Auf diese Weise wird verhindert, dass wichtige Informationen an flüchtige Interaktionszustände gebunden sind.",
-      "exampleGood": "TBD",
-      "exampleBad": "TBD",
-      "effectTextNeg": "TBD",
-      "effectTextPos": "TBD",
+      "exampleGood": "persistent-toast-good",
+      "exampleBad": "persistent-toast-bad",
+      "effectTextNeg": "Im negativen Beispiel erscheint die Statusmeldung nur kurz und verschwindet anschließend automatisch. Dadurch besteht die Gefahr, dass Nutzerinnen und Nutzer die Information nicht rechtzeitig wahrnehmen oder vollständig erfassen können. Besonders für Menschen mit kognitiven Einschränkungen kann dies problematisch sein, da die Meldung nach ihrem Verschwinden nicht mehr zugänglich ist.",
+      "effectTextPos": "Im positiven Beispiel bleibt die Statusmeldung sichtbar, bis sie aktiv geschlossen wird. Nutzerinnen und Nutzer haben dadurch ausreichend Zeit, die Information wahrzunehmen und zu verstehen. Da die Meldung zudem erneut aufgerufen werden kann, bleibt sie wiederauffindbar und ist insgesamt zuverlässiger nutzbar.",
       "userGroups": [
         {
           "title": "Nutzer mit kognitiven Einschränkungen",
