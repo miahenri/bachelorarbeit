@@ -66,7 +66,17 @@ section {
 
 .examples{
   display: flex;
+    flex-direction: row;
   gap: 40px;
+
+  h3 {
+    margin-bottom: var(--s);
+  }
+
+  @media (max-width: 924px) {
+    flex-direction: column;
+    gap: var(--xl);
+  }
 }
 
 .example{
@@ -74,5 +84,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;   /* horizontale Zentrierung */
+  justify-content: top; /* vertikale Zentrierung */
   text-align: center;    /* Text ebenfalls mittig */
 }

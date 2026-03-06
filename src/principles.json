@@ -53,10 +53,10 @@
       "problemKicker": "Das Problem von Bewegung als Teil oder alleinige Rückmeldung",
       "principleTitle": "Bewegung als unterstützendes nicht zentrales Feedback",
       "principleIntro": "Mikrointeraktionen sollten Bewegung nicht als alleinigen oder zentralen Informationsträger einsetzen. Wird Feedback primär oder ausschließlich über Animationen, Übergänge oder Bewegungen vermittelt, setzt dies voraus, dass Nutzer*innen diese Bewegung wahrnehmen, verarbeiten und tolerieren können. Für bewegungssensible Personen oder Nutzungskontexte mit reduzierter Bewegung führt dies dazu, dass Rückmeldungen abgeschwächt oder vollständig unverständlich werden. Stattdessen sollte Bewegung nur eine unterstützende Rolle einnehmen und stets durch gleichwertige statische Rückmeldungen ergänzt werden. Zustandsänderungen müssen auch ohne Bewegung eindeutig erkennbar bleiben, etwa durch klare visuelle Markierungen, textuelle Hinweise oder strukturelle Veränderungen. Zusätzlich sollte die Gestaltung berücksichtigen, dass Bewegung reduziert oder deaktiviert werden kann, ohne dass die Funktionalität oder Verständlichkeit der Mikrointeraktion verloren geht.",
-      "exampleGood": "TBD",
-      "exampleBad": "TBD",
-      "effectTextNeg": "TBD",
-      "effectTextPos": "TBD",
+      "exampleGood": "motion-feedback-good",
+      "exampleBad": "motion-feedback-bad",
+      "effectTextNeg": "Im negativen Beispiel wird der Fehler vor allem über eine kurze horizontale Bewegung des Eingabefelds vermittelt. Diese Form der Rückmeldung kann für bewegungssensible Nutzerinnen und Nutzer unangenehm sein oder sogar körperliche Beschwerden wie Schwindel auslösen. Da zusätzlich keine erklärende Fehlermeldung erscheint, bleibt außerdem unklar, warum die Eingabe nicht akzeptiert wurde.",
+      "effectTextPos": "Im positiven Beispiel wird die Bewegung nur als unterstützendes Element eingesetzt und kann bei Bedarf deaktiviert werden. Der Fehler wird zusätzlich durch eine rote Umrandung und eine verständliche Textmeldung unter dem Eingabefeld kommuniziert. Dadurch bleibt die Rückmeldung auch ohne Bewegung eindeutig erkennbar und kann von unterschiedlichen Nutzergruppen leichter verstanden werden.",
       "userGroups": [
         {
           "title": "Nutzer mit vestibulären Einschränkungen",

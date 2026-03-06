@@ -1,80 +1,88 @@
-.demo-row{
+/* Gestaltungsprinzip: Redundantes Feedback */
+.demo-row {
   display: flex;
   flex-direction: row;
-  gap: 12px; 
+  gap: 12px;
   align-items: center;
 }
 
-.demo-btn{
+.demo-btn {
   padding: 16px 20px;
   border-radius: 6px;
   border: 1px solid var(--color-blue-dark);
   background: var(--color-blue-dark);
-  color: white;
+  color: var(--color-lightest);
   font: inherit;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s, font-weight 0.2s;
-  margin: var(--s);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    font-weight 0.2s;
 }
 
-.demo-btn:focus-visible{
+.demo-btn:focus-visible {
   outline: 2px solid black;
   outline-offset: 2px;
 }
 
 .demo-btn.bad:hover,
-.demo-btn.bad:focus-visible{
+.demo-btn.bad:focus-visible {
   background: rgb(0, 78, 155);
   border-color: rgb(0, 78, 155);
 }
 
-.demo-btn.good{
+.demo-btn.good {
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
 .demo-btn.good:hover,
-.demo-btn.good:focus-visible{
-  background: rgb(230, 241, 255);  
-  border-color: rgb(230, 241, 255);
+.demo-btn.good:focus-visible {
+  background: var(--color-blue-lightest);
   color: var(--color-blue-dark);
   font-weight: 700;
 }
 
-.demo-btn.good .icon{
+.demo-btn.good .icon {
   display: none;
 }
 
-.demo-btn.good.saved .icon{
+.demo-btn.good.saved .icon {
   display: inline;
 }
 
-.tooltip-wrapper{
+/* Gestaltungsprinzip: Gleichwertige Interaktionszustände */
+
+.tooltip-wrapper {
   position: relative;
   display: inline-block;
 }
 
-.tooltip-btn{
+.tooltip-btn {
   padding: 16px 20px;
   border-radius: 6px;
   border: 1px solid var(--color-blue-dark);
   background: var(--color-blue-dark);
-  color: white;
+  color: var(--color-lightest);
   font: inherit;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s, font-weight 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s,
+    font-weight 0.2s;
   margin: var(--s);
 }
 
-.tooltip{
+.tooltip {
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translateX(-50%);
-  
+
   background: #333;
-  color: white;
+  color: var(--color-lightest);
   padding: 6px 10px;
   border-radius: 4px;
   font-size: 14px;
@@ -85,11 +93,108 @@
   transition: opacity 0.15s;
 }
 
-.tooltip-wrapper.bad:hover .tooltip{
+.tooltip-wrapper.bad:hover .tooltip {
   opacity: 1;
 }
 
 .tooltip-wrapper.good:hover .tooltip,
-.tooltip-wrapper.good:focus-within .tooltip{
+.tooltip-wrapper.good:focus-within .tooltip {
   opacity: 1;
+}
+
+/* Gestaltungsprinzip: Bewegung nicht als primäre Rückmeldung */
+
+.motion-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 320px;
+}
+
+.motion-demo label {
+  font-weight: 600;
+}
+
+.motion-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #bfc7d1;
+  border-radius: 6px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.motion-input,
+.motion-submit,
+.motion-toggle{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.motion-input.error {
+  border: 2px solid #c62828;
+}
+
+.motion-submit,
+.motion-toggle {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--color-blue-dark);
+  background: var(--color-blue-dark);
+  color: var(--color-lightest);
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+  min-width: 210px;
+  box-sizing: border-box;
+}
+
+.motion-submit:hover,
+.motion-toggle:hover {
+  background: var(--color-blue-lightest);
+  color: var(--color-blue-dark);
+  font-weight: 700;
+}
+
+.motion-submit:focus-visible,
+.motion-toggle:focus-visible,
+.motion-input:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.motion-error-text {
+  padding-top: 0;
+  width: 320px;
+  color: #c62828;
+}
+
+.shake {
+  animation: shake-x 0.35s ease-in-out;
+}
+
+@keyframes shake-x {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.motion-demo.reduced-motion .shake {
+  animation: none;
 }

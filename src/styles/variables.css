@@ -1,6 +1,7 @@
 :root {
   --color-blue-dark: rgb(0, 90, 178);
   --color-blue-light: rgba(0, 90, 178, 0.8);
+  --color-blue-lightest: rgb(230, 241, 255);
   --color-lightest: rgb(253, 253, 253);
   --color-darkest: rgb(47, 52, 57);
 
