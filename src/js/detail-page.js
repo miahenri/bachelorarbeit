@@ -12,6 +12,7 @@
     const principles = data.principles || [];
 
     const principle = principles.find((p) => p.id === id) || principles[0];
+    const currentIndex = principles.findIndex((p) => p.id === principle.id);
 
     if (!principle) {
       renderNotFound();
@@ -39,6 +40,9 @@
 
     // Nutzergruppen rendern (Cards/Spalten)
     renderUserGroups("user-groups", principle.userGroups);
+
+    // Navigation zum nächsten Prinzip
+    renderNextPrincipleLink(principles, currentIndex);
   } catch (err) {
     console.error(err);
     renderError("Beim Laden der Inhalte ist ein Fehler aufgetreten.");
@@ -94,6 +98,29 @@
       col.appendChild(p);
       container.appendChild(col);
     });
+  }
+
+  function renderNextPrincipleLink(principles, currentIndex) {
+    const link = document.getElementById("next-principle-link");
+    if (!link) return;
+
+    if (currentIndex !== -1 && currentIndex < principles.length - 1) {
+      const nextPrinciple = principles[currentIndex + 1];
+
+      link.href = `detail-view.html?id=${nextPrinciple.id}`;
+      link.textContent = `Hier gehts zum nächsten Gestaltungsprinzip`;
+      link.setAttribute(
+        "aria-label",
+        `Zum nächsten Gestaltungsprinzip: ${nextPrinciple.principleTitle}`
+      );
+    } else {
+      link.href = `index.html`;
+      link.textContent = "Zur Übersicht aller Gestaltungsprinzipien";
+      link.setAttribute(
+        "aria-label",
+        "Zur Übersicht aller Gestaltungsprinzipien"
+      );
+    }
   }
 
   function renderNotFound() {
