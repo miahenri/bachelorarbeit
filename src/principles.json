@@ -127,10 +127,10 @@
       "problemKicker": "Das Problem von unerwarteten Layout- und Positionswechseln",
       "principleTitle": "Vorhersehbare und räumlich stabile Zustandsänderungen",
       "principleIntro": "Mikrointeraktionen sollten keine unerwarteten Layout- oder Positionswechsel auslösen, die die räumliche Orientierung der Nutzerinnen beeinträchtigen. Wenn sich Inhalte durch eine Interaktion plötzlich verschieben, neu anordnen oder der sichtbare Bereich der Seite springt, wird der Zusammenhang zwischen Aktion und Reaktion geschwächt. Dies kann zu Verunsicherung führen und erschwert es, den aktuellen Interaktionskontext nachzuvollziehen. Stattdessen sollten Zustandsänderungen räumlich stabil und nachvollziehbar gestaltet sein. Veränderungen im Layout müssen vorhersehbar sein und klar kommunizieren, was sich verändert hat und warum. Wenn Inhalte ein- oder ausgeblendet werden, sollte dies ohne abrupte Positionswechsel erfolgen oder so umgesetzt sein, dass der Fokus und die Orientierung der Nutzerinnen erhalten bleiben.",
-      "exampleGood": "TBD",
-      "exampleBad": "TBD",
-      "effectTextNeg": "TBD",
-      "effectTextPos": "TBD",
+      "exampleGood": "spatial-dropdown-good",
+      "exampleBad": "spatial-dropdown-bad",
+      "effectTextNeg": "Im negativen Beispiel verdeckt das geöffnete Menü zunächst andere interaktive Elemente, wodurch sich deren Position anschließend verändert. Die Aktionsbuttons müssen seitlich ausweichen, um wieder sichtbar und nutzbar zu werden. Dadurch entstehen unerwartete Layoutverschiebungen, die die räumliche Orientierung erschweren und dazu führen können, dass Nutzerinnen und Nutzer bereits anvisierte Ziele plötzlich an einer anderen Stelle wiederfinden.",
+      "effectTextPos": "Im positiven Beispiel sind die interaktiven Elemente von Beginn an so angeordnet, dass das geöffnete Menü keinen anderen Inhalt verdeckt. Die Position der Aktionsbuttons bleibt unverändert, wodurch die räumliche Struktur der Oberfläche stabil und vorhersehbar bleibt. Nutzerinnen und Nutzer können sich dadurch leichter orientieren und Interaktionen zuverlässiger ausführen.",
       "userGroups": [
         {
           "title": "Nutzer mit kognitiven Einschränkungen",

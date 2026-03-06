@@ -422,3 +422,102 @@
   fill: #b0004b;
   stroke: #b0004b;
 }
+
+/* Gestaltungsprinzip: Vorhersehbare und räumlich stabile Zustandsänderungen */
+.spatial-demo{
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.spatial-menu-toggle,
+.spatial-action-btn,
+.spatial-menu-item{
+  font: inherit;
+}
+
+.spatial-menu-toggle,
+.spatial-action-btn{
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--color-blue-dark);
+  background: var(--color-blue-dark);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.spatial-menu-toggle:hover,
+.spatial-menu-toggle:focus-visible,
+.spatial-action-btn:hover,
+.spatial-action-btn:focus-visible{
+  background: var(--color-blue-lightest);
+  color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+}
+
+.spatial-menu-toggle:focus-visible,
+.spatial-action-btn:focus-visible,
+.spatial-menu-item:focus-visible{
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.spatial-stage{
+  position: relative;
+  min-height: 150px;
+  padding: 16px;
+}
+
+/* Menü */
+.spatial-menu{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #c9d3df;
+  border-radius: 8px;
+  background: white;
+  z-index: 2;
+}
+
+.spatial-menu-item{
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: #111928;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Aktionen */
+.spatial-actions{
+  position: absolute;
+  top: 36px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  margin-left: var(--s);
+}
+
+/* Schlechtes Beispiel:
+   Buttons liegen erst unter dem Menü und rutschen dann weg */
+.spatial-demo.bad.menu-open .spatial-actions{
+  transform: translateX(165px);
+}
+
+/* Gutes Beispiel:
+   Buttons stehen von Anfang an rechts daneben */
+.spatial-stage.stable .spatial-actions{
+  left: 190px;
+  transform: none;
+}

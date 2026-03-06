@@ -311,4 +311,76 @@ window.DEMOS = {
       }
     });
   },
+
+  "spatial-dropdown-bad": (container) => {
+  container.innerHTML = `
+    <div class="spatial-demo bad">
+      <button type="button" class="spatial-menu-toggle" aria-expanded="false">
+        Menü öffnen
+      </button>
+
+      <div class="spatial-stage">
+        <div class="spatial-menu" hidden>
+          <button type="button" class="spatial-menu-item">Profil</button>
+          <button type="button" class="spatial-menu-item">Einstellungen</button>
+          <button type="button" class="spatial-menu-item">Abmelden</button>
+        </div>
+
+        <div class="spatial-actions">
+          <button type="button" class="spatial-action-btn">Aktion 1</button>
+          <button type="button" class="spatial-action-btn">Aktion 2</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const toggle = container.querySelector(".spatial-menu-toggle");
+  const menu = container.querySelector(".spatial-menu");
+  const demo = container.querySelector(".spatial-demo");
+
+  let open = false;
+
+  toggle.addEventListener("click", () => {
+    open = !open;
+    menu.hidden = !open;
+    demo.classList.toggle("menu-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Menü schließen" : "Menü öffnen";
+  });
+},
+
+"spatial-dropdown-good": (container) => {
+  container.innerHTML = `
+    <div class="spatial-demo good">
+      <button type="button" class="spatial-menu-toggle" aria-expanded="false">
+        Menü öffnen
+      </button>
+
+      <div class="spatial-stage stable">
+        <div class="spatial-menu" hidden>
+          <button type="button" class="spatial-menu-item">Profil</button>
+          <button type="button" class="spatial-menu-item">Einstellungen</button>
+          <button type="button" class="spatial-menu-item">Abmelden</button>
+        </div>
+
+        <div class="spatial-actions">
+          <button type="button" class="spatial-action-btn">Aktion 1</button>
+          <button type="button" class="spatial-action-btn">Aktion 2</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const toggle = container.querySelector(".spatial-menu-toggle");
+  const menu = container.querySelector(".spatial-menu");
+
+  let open = false;
+
+  toggle.addEventListener("click", () => {
+    open = !open;
+    menu.hidden = !open;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Menü schließen" : "Menü öffnen";
+  });
+},
 };
