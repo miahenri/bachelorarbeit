@@ -10,15 +10,70 @@
   <body>
     <header>
       <nav>
-        <img src="logo.png" alt="Logo" class="logo" />
+        <img src="logo.png" href="/index.html" alt="Logo" class="logo" />
 
         <div class="nav-links">
           <a href="index.html">Gestaltungsprinzipien</a>
           <a href="user-groups.html">Nutzergruppen</a>
           <a href="about-us.html">Über uns</a>
         </div>
-        <span class="menu-icon hidden">☰</span>
+        <button
+          class="menu-icon hidden"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Menü öffnen"
+          type="button"
+        >
+          <svg
+            width="20px"
+            height="20px"
+            stroke-width="2.4"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M3 5H21"
+              stroke="#000000"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M3 12H21"
+              stroke="#000000"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M3 19H21"
+              stroke="#000000"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
       </nav>
+      <div class="mobile-menu-overlay" id="mobile-menu" hidden>
+        <div class="mobile-menu-content">
+          <button
+            class="close-menu"
+            id="menu-close"
+            aria-label="Menü schließen"
+            type="button"
+          >
+            ×
+          </button>
+
+          <a href="index.html">Gestaltungsprinzipien</a>
+          <a href="user-groups.html">Nutzergruppen</a>
+          <a href="about-us.html">Über uns</a>
+        </div>
+      </div>
     </header>
     <section class="title-section blue-background">
       <h1>Nutzergruppen</h1>
@@ -143,5 +198,6 @@
       <a href="https://github.com/miahenri">Mia auf Github</a>
       <a href="https://github.com/miahenri/bachelorarbeit">Repository zur Arbeit</a>
     </footer>
+    <script src="./src/js/menu.js" defer></script>
   </body>
 </html>
