@@ -81,7 +81,7 @@ h3 {
     padding: var(--m);
     width: 100%;
 
-    h6 {
+    .icon-title {
       font-size: var(--fs-s);
       font-weight: var(--fw-semi-bold);
       color: var(--color-blue-dark);

@@ -87,10 +87,10 @@ p {
   line-height: var(--lh-normal);
   padding-top: var(--xs);
   text-align: justify;
-  text-justify: inter-word; /* Optimiert Abstände zwischen Wörtern */
-  hyphens: auto; /* Automatische Silbentrennung */
-  -webkit-hyphens: auto; /* Für Safari */
-  -ms-hyphens: auto; /* Für ältere IE/Edge */
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .hidden {

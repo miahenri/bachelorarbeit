@@ -1,6 +1,7 @@
 // /src/js/demos.js
 
 window.DEMOS = {
+  /* Gestaltungsprinzip: Redundantes Feedback */
   "redundant-buttons-bad": (container) => {
     container.innerHTML = `
       <button class="demo-btn bad">
@@ -29,6 +30,7 @@ window.DEMOS = {
     }
   },
 
+  /* Gestaltungsprinzip: Gleichwertige Interaktionszustände */
   "equivalent-tooltip-bad": (container) => {
     container.innerHTML = `
       <div class="tooltip-wrapper bad">
@@ -55,6 +57,7 @@ window.DEMOS = {
     `;
   },
 
+  /* Gestaltungsprinzip: Bewegung nicht als primäre Rückmeldung */
   "motion-feedback-bad": (container) => {
     container.innerHTML = `
     <div class="motion-demo">
@@ -134,6 +137,7 @@ window.DEMOS = {
     });
   },
 
+  /* Gestaltungsprinzip: Persistente Inhalte */
   "persistent-toast-bad": (container) => {
     container.innerHTML = `
     <div class="toast-demo">
@@ -194,6 +198,7 @@ window.DEMOS = {
     reopenBtn.addEventListener("click", showToast);
   },
 
+  /* Gestaltungsprinzip: Klar priorisierte Rückmeldungen */
   "prioritized-feedback-bad": (container) => {
     container.innerHTML = `
   <div class="like-demo">
@@ -312,6 +317,7 @@ window.DEMOS = {
     });
   },
 
+  /* Gestaltungsprinzip: Vorhersehbare und räumlich stabile Zustandsänderungen */
   "spatial-dropdown-bad": (container) => {
     container.innerHTML = `
     <div class="spatial-demo bad">
