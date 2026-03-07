@@ -76,9 +76,9 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center; /* horizontale Zentrierung */
-  justify-content: top; /* vertikale Zentrierung */
-  text-align: center; /* Text ebenfalls mittig */
+  align-items: center; 
+  justify-content: top; 
+  text-align: center;
 }
 
 .info-link {
