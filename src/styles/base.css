@@ -9,8 +9,8 @@ html {
   height: auto;
   margin-right: var(--l);
   position: absolute;
-  left: var(--l);
-  top: var(--m);
+  left: var(--m);
+  top: var(--xs);
 }
 
 .nav-links {
