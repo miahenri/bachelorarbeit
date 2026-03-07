@@ -13,7 +13,7 @@ window.DEMOS = {
     container.innerHTML = `
       <button class="demo-btn good" id="good-save-btn">
         <span class="text">Klick mich</span>
-        <span class="icon" aria-hidden="true"><svg width="20px" height="20px" stroke-width="2.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#005ab2"><path d="M5 13L9 17L19 7" stroke="#005ab2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        <span class="icon" aria-hidden="true"><svg width="20px" height="20px" stroke-width="2.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color=currentColor><path d="M5 13L9 17L19 7" stroke=currentColor stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
       </button>
     `;
 
