@@ -80,6 +80,12 @@ footer {
     text-decoration: none;
     color: var(--color-blue-dark);
   }
+
+  @media (max-width: 799px) {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--xs);
+  }
 }
 
 p {
