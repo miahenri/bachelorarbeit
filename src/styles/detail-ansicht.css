@@ -57,6 +57,10 @@ section {
   }
 }
 
+.example-title {
+  padding-bottom: var(--s);
+}
+
 .examples {
   display: flex;
   flex-direction: row;

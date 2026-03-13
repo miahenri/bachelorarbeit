@@ -4,6 +4,11 @@ h1 {
   text-align: right;
   padding-right: var(--xl);
   padding-left: var(--xl);
+
+  @media (max-width: 949px) {
+    font-size: var(--fs-xl);
+    text-align: right;
+  }
 }
 
 .title-section {

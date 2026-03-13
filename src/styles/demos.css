@@ -72,7 +72,6 @@
     border-color 0.2s,
     color 0.2s,
     font-weight 0.2s;
-  margin: var(--s);
 }
 
 .tooltip {
